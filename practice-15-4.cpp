@@ -10,12 +10,9 @@ const int N = 5;
 void PrintEvenOdd(int IsOdd, int num)
 {
 
-    for (int i = 0; i < num; ++i)
+    for (int i = IsOdd; i < num; i +=2)
     {
-        if (i % 2 == IsOdd)
-        {
-            std::cout << i << "\n";
-        }
+        std::cout << i << "\n";
     }
     std::cout << "=====" << "\n";
 }
@@ -31,6 +28,6 @@ int main()
     }
     std::cout << "=====" << "\n";
 
-    PrintEvenOdd(0, 30);
+    PrintEvenOdd(1, 30);
 }
 
